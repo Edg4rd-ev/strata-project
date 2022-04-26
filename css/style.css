@@ -1,0 +1,143 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    line-height: 2;
+}
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    background-image: url(../images/overlay.png), url(../images/bg.jpg);
+    background-position: center top;
+    background-size: auto, cover;
+    padding: 100px 50px 50px 50px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.main-header a img{
+    border-radius: 50%;
+}
+.main-header h1{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-header h1 strong{
+    color: white;
+}
+.main-header h2{
+    font-size: 14px;
+    font-weight: normal;
+}
+.main-header h2 a{
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: dotted 1px rgba(255, 255, 255, 0.4);
+    transition: all .2s linear;
+}
+.main-header h2 a:hover{
+    border-color: rgba(255, 255, 255, 0);
+    color: rgba(58, 191, 157,1);
+}
+.main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 100px 50px 50px 50px;
+    box-sizing: border-box;
+}
+main img {
+    width: 100%;
+    display: inline-block;
+}
+.button-default{
+    text-decoration: none;
+    border: solid 2px #888;
+    border-radius: 5px;
+    padding: 7px;
+    color: #666;
+    transition: all .2s linear;
+}
+.button-default:hover{
+    color: rgb(58, 191, 157);
+    border-color:rgb(58, 191, 157);
+    border-width: 3px;
+}
+.button-default-fill{
+    background-color: rgb(63, 201, 166);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .2s cubic-bezier(.29,-0.48,.82,1.36);
+    box-shadow: 1px 1px 1px #ccc;
+}
+.button-default-fill:hover{
+    background-color: rgb(31, 231, 181);
+    box-shadow: 2px 2px 1px #ccc;
+    padding: 12px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table thead, table tfoot{
+    border-bottom: solid 2px #9c9c9c;
+    background-color: #ccc;
+    font-weight: bold;
+}
+table td, table th{
+    border-bottom: solid 1px #e0e0e0;
+}
+table tbody tr:nth-child(even) td{
+    background-color: #eee;
+}
+.row{
+    overflow: auto;
+}
+.row .col-2-3{
+    width:65%;
+    float: left;
+}
+.row .col-1-3{
+    width: 32%;
+    margin-left: 3%;
+    float: left;
+}
+input, textarea, label{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.col-2{
+    float: left;
+    width: 49%;
+}
+.col-2:first-child{
+    margin-right: 1%;
+}
+.col-2:last-child{
+    margin-left: 1%;
+}
+textarea, input{
+    background-color: #eee;
+    border: solid 2px transparent;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+textarea{
+    height: 140px;
+    resize: none;
+}
+textarea:focus, input:focus{
+    border: solid 2px rgb(58, 191, 157);
+}
+.sub{
+    width: auto;
+}
