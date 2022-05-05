@@ -33,22 +33,30 @@ body{
     font-size: 14px;
     font-weight: normal;
 }
-.main-header h2 a{
+.links, .fake-link{
     color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
     font-weight: normal;
     border-bottom: dotted 1px rgba(255, 255, 255, 0.4);
     transition: all .2s linear;
 }
-.main-header h2 a:hover{
+.links:hover, .fake-link:hover{
     border-color: rgba(255, 255, 255, 0);
     color: rgba(58, 191, 157,1);
+}
+.fake-link{
+    color: inherit;
+    border-color: inherit;
+    font-weight: bold;
 }
 .main-content{
     width: 65%;
     margin-left: 35%;
     padding: 100px 50px 50px 50px;
     box-sizing: border-box;
+}
+.main-content h3{
+    text-transform: capitalize;
 }
 main img {
     width: 100%;
@@ -60,12 +68,15 @@ main img {
     border-radius: 5px;
     padding: 7px;
     color: #666;
-    transition: all .2s linear;
+    transition: all .2s cubic-bezier(.29,-0.48,.82,1.36);
 }
 .button-default:hover{
     color: rgb(58, 191, 157);
     border-color:rgb(58, 191, 157);
     border-width: 3px;
+}
+.button-default-2{
+    border: none;
 }
 .button-default-fill{
     background-color: rgb(63, 201, 166);
@@ -81,6 +92,12 @@ main img {
     box-shadow: 2px 2px 1px #ccc;
     padding: 12px;
 }
+code{
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 2px;
+    border: solid 1px #e0e0e0;
+}
 table{
     width: 100%;
     text-align: center;
@@ -95,7 +112,7 @@ table td, table th{
     border-bottom: solid 1px #e0e0e0;
 }
 table tbody tr:nth-child(even) td{
-    background-color: #eee;
+    background-color: rgb(224, 224, 224);
 }
 .row{
     overflow: auto;
@@ -108,6 +125,7 @@ table tbody tr:nth-child(even) td{
     width: 32%;
     margin-left: 3%;
     float: left;
+    margin-top: 1em;
 }
 input, textarea, label{
     display: inline-block;
@@ -125,7 +143,7 @@ input, textarea, label{
     margin-left: 1%;
 }
 textarea, input{
-    background-color: #eee;
+    background-color: rgb(224, 224, 224);
     border: solid 2px transparent;
     border-radius: 5px;
     padding: 10px;
@@ -140,4 +158,42 @@ textarea:focus, input:focus{
 }
 .sub{
     width: auto;
+}
+.recent-works{
+    width: 48%;
+    float: left;
+}
+.recent-works img{
+    border-radius: 5px;
+}
+.recent-works:nth-child(odd){
+    margin-left: 2%;
+}
+.main-content .img-text{
+    width: auto;
+}
+.main-footer{
+    position: fixed;
+    bottom: 15px;
+    width: 35%;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    padding: 10px 50px 50px 50px;
+    box-sizing: border-box;
+}
+.main-footer ul{
+    list-style: none;
+}
+.main-footer li{
+    display: inline-block;
+    padding: 0; 
+    margin: 0;
+}
+.main-footer ul a{
+    border: none;
+}
+.fonta{
+    font-size: 20px;
+    margin-left: 10px;
 }
