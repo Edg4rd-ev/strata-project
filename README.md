@@ -1,6 +1,6 @@
 # strataProject
 
-## Esta é meu segundo projeto usando **HTML** e **CSS**
+## Este é meu segundo projeto usando **HTML** e **CSS**
 
 <!--ts-->
 * [Sobre](#Sobre)
